@@ -69,9 +69,7 @@ img{
     height: auto;
 }
 .section-height{
-    /* overflow-x: hidden; */
-    /* min-width: 1000px; */
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .nav-name{
     font-family: var(--nav-bar);
@@ -220,8 +218,8 @@ img{
         display: none;
     }
     .container{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
     }
 
     .section{
@@ -308,8 +306,8 @@ img{
     justify-content: center;
     align-items: center;
     background: #2696E9;
-    padding: 0 8em;
-    padding-top: 3em;
+    padding: 14% 10%  !important;
+    padding-top: 3%;
   }
     .home::before{
         z-index: 777;
@@ -335,15 +333,15 @@ img{
     .home .home-content{
         z-index: 888;
         color: #fff;
-        margin-top: 5px;
+        margin-top: 5%;
     }
     .home .home-content h2{
         font-family: var(--main-header);
-        font-size: 4em;
+        font-size: 3vw;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 2px;
-        line-height: 75px;
+        line-height: 128%;
         margin-bottom: 30px;
         max-width: 70%;
     }
@@ -374,7 +372,7 @@ img{
     .home .media-icons{
         z-index: 888;
         position: absolute;
-        right: 30px;
+        right: 10%;
         display: flex;
         flex-direction: column;
         transition: 0.5s ease;
@@ -391,11 +389,11 @@ img{
     }
 
     /* ==========MEDIA QUARIES========== */
-    @media (max-width: 1040px){
+    /* @media (max-width: 1040px){
         .section{
             padding: 100px 35px;
         }
-    }
+    } */
     @media (max-width: 930px){
         .home .home-content h2{
             font-family: var(--main-header);
@@ -503,8 +501,18 @@ img{
     }
     @media (max-width: 336px){
         .home-content{
-            padding-top: 2em;
+            padding-top: 4em;
         }
+        .home .home-content h2{
+            /* padding-left: 10px; */
+            width: 98vw;
+            font-size: 1.8em;
+            font-weight: 700;
+            text-wrap: wrap;
+            letter-spacing: 1px;
+            line-height: 45px;
+            margin-bottom: 10px;
+        } 
     }
     @media (max-width: 280px){
         .home-content{
@@ -541,7 +549,7 @@ img{
   /* ================================Sub Home================================== */
   .sub-home{
     max-width: 100%;
-    padding: 10em 8em ;
+    padding: 9% 8% ;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -603,7 +611,7 @@ img{
 
   /* =================================About Section============================ */
   .about{
-    padding: 6em 8em;
+    padding: 7% 9.6%;
     background: #f6f6f6;
   }
   .about-content{
@@ -752,11 +760,10 @@ img{
   /* =============================Service Section============================== */
   #service{
     max-width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
-    padding-top: 0 !important;
     overflow: hidden;
-    margin-bottom: 3em;
+    padding: 6% 8%;
   }
   .service-content::before{
     content: "";
@@ -765,7 +772,7 @@ img{
     right: 0;
     top: 0;
     bottom: 0;
-    height: 50%;
+    height: 100%;
     z-index: -1;
     background: url(../assets/images/bacground/bg6.png);
     background-repeat: no-repeat;
@@ -843,7 +850,7 @@ img{
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1.5rem;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .service-carousel .blog-post .blog-content .service-img{
@@ -856,8 +863,7 @@ img{
     text-align: center;
 }
 .service-carousel .blog-post .blog-content p{
-    text-align: justify;
-    padding: 0 10px 14px;
+    padding: 0 0% 14px;
 }
 .service-carousel .blog-post .blog-content .carousel-btn{
     padding: 0.6rem .2rem;
@@ -901,76 +907,6 @@ img{
 
 
 
-
-/* ================================Image Slider================================ */
-@keyframes slide {
-    from{
-        transform: translateX(-10);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
-.logos{
-    max-width: auto;
-    position: relative;
-    padding: 70px 10px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.logos::before,
-.logos::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 2;
-}
-.logos::before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
-}
-.logos::after{
-    right: 0;
-    background: linear-gradient(to right rgba(255, 255, 255, 0), #fff);
-}
-
-.logos:hover .logos-slide{
-    animation-play-state: paused;
-}
-.logos-slide{
-    /* width: 100%; */
-    overflow: hidden;
-    display: inline-block ;
-    animation: 8s slide infinite linear;
-}
-.logos-slide img{
-    height: 4em;
-    margin: 0 50px;
-}
-@media (max-width: 1024px){
-    .logos-slide img{
-        height: 3em;
-        margin: 0 30px;
-    }
-} 
-@media (max-width: 720px){
-    .logos-slide img{
-        height: 2em;
-        margin: 0 20px;
-    }
-} 
-@media (max-width: 540px){
-    .logos-slide img{
-        height: 1.5em;
-        margin: 0 15px;
-    }
-} 
-/* ===============xx===============Image Slider=================xx============= */
-  
-
-
   /* ==============================Testimonial Section========================= */
   #testimonial{
     background: url(../assets/images/bacground/bg-AnyEraser.png);
@@ -978,7 +914,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    padding: 0 5em 3em;
+    padding: 8% 10%;
     max-width: 100%;
 }
 .testimonial{
@@ -1173,6 +1109,74 @@ img{
     }
 }
   /* ==============xx==============Testimonial Section==========xx============= */
+
+
+  /* ================================Image Slider================================ */
+@keyframes slide {
+    from{
+        transform: translateX(-10);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    max-width: auto;
+    position: relative;
+    padding: 70px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logos::before,
+.logos::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+}
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right rgba(255, 255, 255, 0), #fff);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos-slide{
+    /* width: 100%; */
+    overflow: hidden;
+    display: inline-block ;
+    animation: 8s slide infinite linear;
+}
+.logos-slide img{
+    height: 4em;
+    margin: 0 50px;
+}
+@media (max-width: 1024px){
+    .logos-slide img{
+        height: 3em;
+        margin: 0 30px;
+    }
+} 
+@media (max-width: 720px){
+    .logos-slide img{
+        height: 2em;
+        margin: 0 20px;
+    }
+} 
+@media (max-width: 540px){
+    .logos-slide img{
+        height: 1.5em;
+        margin: 0 15px;
+    }
+} 
+/* ===============xx===============Image Slider=================xx============= */
 
 
 

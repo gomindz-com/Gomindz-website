@@ -22,7 +22,6 @@ li{
 }
 body{
     width: 100%;
-    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -175,7 +174,7 @@ section{
 /* ==================GoDashboard================ */
 .go-dashboards{
     max-width: 100%;
-    margin: 3% 0;
+    margin: 3.2% 0 0;
 }
 /* ============GoDashboard Carousel================ */
 .go-dashboards .carousel{
@@ -232,6 +231,8 @@ section{
     gap: 50px;
     overflow-x: hidden;
     padding: 30px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .carousel-item .dashboard-row .dashboard-img{
     overflow: hidden;   
@@ -481,6 +482,8 @@ section{
 /* ===============GoWebsite=============== */
 #nav-profile{
     position: relative;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 #nav-profile::before{
     content: "";
@@ -495,8 +498,8 @@ section{
 }
 
 #nav-profile .align-items-start{
-    margin: 7% 8% 4%;
-    padding-top: 1.5%;
+    margin: 7% 12% 10%;
+    padding-top: 2%;
 }
 .nav-pills{
     margin-top: 3em;
@@ -568,9 +571,11 @@ section{
 }
 
 /* =============MEDIA QUERY============ */
-@media (min-width: 2560px){
+@media (min-width: 2060px){
     #nav-profile{
         position: relative;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     #nav-profile::before{
         content: "";
