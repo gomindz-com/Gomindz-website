@@ -1,4 +1,6 @@
-// ===============================================Scroll Section Active============================================
+// ==================== SCROLL SECTION ACTIVE ==================== 
+const sections = document.querySelectorAll('section[id]')
+
 function scrollActive(){
     const scrollY = window.scrollY
 
@@ -15,7 +17,8 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
-// ========================xx==================Scroll Section Active=========================xx====================
+
+// ==========xx========= SCROLL SECTION ACTIVE =========xx========
 
 
 
@@ -26,7 +29,7 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-// =======================xx=============Change Background Header============================xx=====================
+
 
 
 
