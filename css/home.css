@@ -337,7 +337,7 @@ img{
     }
     .home .home-content h2{
         font-family: var(--main-header);
-        font-size: 3vw;
+        font-size: 3.5vw;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -1181,16 +1181,8 @@ img{
 
 
   /* ==================================Footer Section=========================== */
-  footer{
-    position: fixed;
-    bottom: 0;
-  }
 
-  @media (max-height: 880px){
-    footer{
-        position: static;
-    }
-  }
+
 
   .footer-distributed{
     background-color: #f6f6f6;
@@ -1307,7 +1299,7 @@ img{
             display: block;
             width: 100%;
             margin-bottom: 40px;
-            text-align: center;
+            text-align: left;
         }
         .footer-distributed .footer-center i{
             margin-left: 0;
