@@ -51,6 +51,7 @@ body{
     font-weight: bold;
 }
 
+
 /* ===============Home Section================= */
 section{
     height: auto;
@@ -525,6 +526,7 @@ section{
     border-bottom-right-radius: 25px;
     width: 16em; 
     height:22em;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .tab-content .website .site .site-content{
     margin-top: 2em;
