@@ -266,6 +266,15 @@ section{
     line-height: 24px;
     font-family: var(--p-under-sub-headings);
 }
+.carousel-item .dashboard-row .dashboard-content ul .bullet-points{
+    position: relative;
+    list-style: none;
+    margin-top: 10px;
+    text-align: left;
+}
+.carousel-item .dashboard-row .dashboard-content ul .bullet-points::before{
+    position: absolute;
+}
 
 /* =============MEDIA QUERY============= */
 @media (min-width: 2560px){
