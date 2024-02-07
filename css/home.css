@@ -926,6 +926,10 @@ img{
     gap: 8rem;
     overflow: hidden;
 }
+    .testimonial-left{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     .testimonial-left h3{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
