@@ -43,7 +43,7 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
+    background: white;
     z-index: 8888;
     transition: .4s;
 }
@@ -82,7 +82,7 @@ a{
     font-size: .8rem;
 }
 .header .nav .nav-menu .nav-icon{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /* active-nav-link and scroll header */
@@ -103,7 +103,7 @@ a{
         background: #fff;
         box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.3);
         width: 100%;
-        height: 4rem;
+        height: 3.5rem;
         padding: 0 1rem;
         display: grid;
         align-content: center;
@@ -120,6 +120,8 @@ a{
     .header .nav .nav-menu .nav-list{
         justify-content: center;
         column-gap: 2rem;
+        margin-bottom: 0 !important;
+        padding-left: 0 !important;
     }
 }
 
@@ -192,11 +194,11 @@ a{
     border-radius: 20px;
 }
 .last-row{
-    width: 65%;
+    width: 60%;
     position: relative !important;
-    left: 350px;
-    top: 50px;
-    height: 160px;
+    left: 320px;
+    top: 40px;
+    height: 120px;
     padding-bottom: 10px !important;
     background-color: #76aeee;
     border-radius: 20px;
