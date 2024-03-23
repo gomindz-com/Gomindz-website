@@ -36,7 +36,7 @@ window.addEventListener('scroll', scrollHeader)
 // ================================================Owl Carousel=====================================================
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:20,
+    margin:40,
     responsiveClass:true,
     responsive:{
         0:{
