@@ -618,21 +618,22 @@ img{
 
   /* =================================About Section============================ */
   .about{
-    padding: 7% 9.6%;
+    padding: 7% 6%;
+    /* padding-right: 10%; */
+    /* padding-left: 2%; */
     background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
   }
   .about-content{
     display: flex;
     justify-content: space-between;
   }
-    .about-content .about-left img{
-        width: 90%;
-        height: 90%;
-    }
-/* 
-    .about-content .about-right{
-        padding-left: 2.5em;
+    /* .about-content .about-left img{
+        width: 100%;
+        height: auto;
     } */
+ 
     .about-content .about-right h6 {
         position: relative;
         padding-left: 95px;
@@ -681,11 +682,59 @@ img{
     }
 
     /* ============MEDIA QUERY============== */
+    @media (min-width: 2100px){
+        .about-content .about-right h6 {
+            font-size: 28px;
+        }
+    
+        .about-content .about-right h2{
+            font-family: var(--main-header);
+            padding:.3em 0 .5em;
+            font-size: 3.5rem;
+        }
+        .about-content .about-right P{
+            line-height: 2em;
+            font-size: 26px;
+            padding-bottom: 2em;
+        }
+    }
+    @media (min-width: 1770px){
+        .about-content .about-left {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+    }
+    @media (min-width: 1441px){
+        .about{
+            padding: 7% 8% !important;
+            padding-left: 0% !important;
+          }
+        .about-content .about-left {
+            width: 150%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+    }
+    @media (max-width: 1440px) and (min-width:1025px){
+        .about{
+            padding: 7% 6% !important;
+            padding-left: 2% !important;
+          }
+          .about-content .about-left {
+           width: 200%;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     @media (max-width: 1076px) {
-        .about-content .about-left img{
+        /* .about-content .about-left img{
             width: 80%;
             height: 80%;
-        }
+        } */
         /* .about-content .about-right{
             padding-left: 2.5em;
         } */
@@ -705,8 +754,9 @@ img{
             width: 100%;
           }
     }
-    @media (max-width: 910px){
+    @media (max-width: 1024px){
         .about-content{
+            padding: 0 4%;
             flex-wrap: wrap;
         }
     }
@@ -807,7 +857,19 @@ img{
    }
 
 /* ============MEDIA QUERY============= */
-@media (max-width: 842px){
+@media (max-width: 1024px) and (min-width: 843px){
+       
+      .container{
+        margin: 0 !important;
+      } 
+    .owl-carousel{
+        width: 900px !important;
+       } 
+       .blog-content{
+        width: 275px !important;
+       }
+}
+@media (max-width: 842px) and (min-width: 590px){
     .service-top .service-header h2{
         padding:0;
         width: 75%;
@@ -815,6 +877,16 @@ img{
         margin: 0.8em auto;
         font-family: var(--main-header);
         color: #fff;
+       }
+       
+       /* .owl-carousel{
+        margin: 50px !important;
+       }  */
+       .container{
+        margin: 2% !important;
+       }
+       .blog-content{
+        width: 300px !important;
        }
 }
 @media (max-width: 586px){
@@ -838,7 +910,19 @@ img{
         font-family: var(--main-header);
         color: #fff;
        }
+
+       .owl-carousel{
+        width: 280px !important;
+       } 
+       .container{
+        margin: 0 !important;
+       }
+       .blog-content{
+        width: 280px !important;
+       }
 }
+
+
 
 .service-carousel{
     width: 100%;
@@ -922,7 +1006,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    padding: 8% 10%;
+    padding: 8% 4%;
     max-width: 100%;
 }
 .testimonial{
@@ -1015,9 +1099,12 @@ img{
         gap: 3rem;
     }
 }
-@media (width < 900px){
+@media (width <= 1024px){
     .testimonial{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonial{
+        padding: 3rem;
     }
     .testimonial-left{
         grid-template-columns: repeat(2, 1fr);
@@ -1161,7 +1248,7 @@ img{
 }
 .logo-item img{
     /* height: 4rem; */
-    width: 6rem;
+    width: 6.3rem;
     margin-inline: 2rem;
 }
 
