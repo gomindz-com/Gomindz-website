@@ -560,7 +560,7 @@ img{
 
 
 
-             /* ==================ABOUT SECTION CSS===================== */
+             /* ==================ABOUT PAGE CSS===================== */
   
              
   /* =========================Overview-home Section==============================*/
@@ -759,17 +759,26 @@ img{
     padding: 6rem 0 6rem;
  }
     .executive-summary .executive-summary-card{
-        width: 400px;
-        height: auto;
+        width: 380px;
+        height: 1000[x];
         border-radius: 20px;
         overflow: hidden;
-        border: 8px solid #d9e4f0e7;
+        border: 8px solid #2696E9;
         position: relative;
         cursor: pointer;
     } 
+    .executive-summary .executive-summary-card h1{
+        font-family: var(--main-header);
+        font-size: 30px;
+        padding: 2px 4px;
+    }
+    .executive-summary .executive-summary-card p{
+        font-family: var(--p-under-sub-headings);
+        font-size: 22px;
+    }
     .executive-summary .executive-summary-card img{
         width: 100%;
-        height: 100%;
+        height: 22rem;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -792,11 +801,98 @@ img{
     .executive-summary .executive-summary-card:hover .excecutive-summary-card-text{
         right: 0;
     }
+
+    @media (max-width:899px){
+        .executive-summary{
+            gap: 35px;
+         }
+        .executive-summary .executive-summary-card{
+            width: 280px;
+            height: auto;
+        } 
+        .executive-summary .executive-summary-card img{
+            width: 100%;
+            height: auto;
+        }
+        .executive-summary .executive-summary-card h1{
+            font-size: 22px;
+        }
+        .executive-summary .executive-summary-card p{
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width:659px){
+        .executive-summary{
+            gap: 20px;
+         }
+        .executive-summary .executive-summary-card{
+            width: 230px;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 8px solid #2696E9;
+            position: relative;
+            cursor: pointer;
+        } 
+        .executive-summary .executive-summary-card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .executive-summary .executive-summary-card h1{
+            font-family: var(--main-header);
+            font-size: 20px;
+            padding: 2px 4px;
+        }
+        .executive-summary .executive-summary-card p{
+            font-family: var(--p-under-sub-headings);
+            font-size: 15px;
+        }
+    }
+    @media (max-width:530px){
+        .executive-summary{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+         }
+         .executive-summary .executive-summary-card{
+            width: 300px;
+            height: auto;
+        } 
+        .executive-summary .executive-summary-card img{
+            width: 100%;
+            height: auto;
+        }
+        .executive-summary .executive-summary-card h1{
+            font-size: 22px;
+        }
+        .executive-summary .executive-summary-card p{
+            font-size: 18px;
+        }
+    }
+    @media (max-width:336px){
+         .executive-summary .executive-summary-card{
+            width: 240px;
+            height: auto;
+        } 
+        .executive-summary .executive-summary-card img{
+            width: 100%;
+            height: auto;
+        }
+        .executive-summary .executive-summary-card h1{
+            font-size: 20px;
+        }
+        .executive-summary .executive-summary-card p{
+            font-size: 15px;
+        }
+    }
  /* ===========XX========Executive-summary Section===========XX========= */
 
 
     
-             /* ========XX=======ABOUT SECTION CSS============XX======== */
+             /* ========XX=======ABOUT PAGE CSS============XX======== */
 
 
 
