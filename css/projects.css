@@ -236,15 +236,32 @@ section{
     margin-right: auto !important;
 }
 .carousel-item .dashboard-row .dashboard-img{
+    position: relative;
     overflow: hidden;   
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .carousel-item .dashboard-row .dashboard-img img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     transition: 0.3s;
 }
+.carousel-item .dashboard-row .dashboard-img .dashboard-img-text{
+    position: absolute;
+    background: linear-gradient(to top,#052d52, rgba(130, 169, 202, 0.5), #fff);
+    color: #000;
+    bottom: 0px;
+    opacity: 1.8;
+}
+.dashboard-img .dashboard-img-text h3{
+    padding-top: 10px;
+    color: rgba(8, 8, 8, 0.842);
+    font-weight: bold;
+}
+.dashboard-img .dashboard-img-text p{
+    color: #fff;
+}
+
 .carousel-item .dashboard-row .dashboard-img:hover img{
     transform: scale(1.25);
 }
