@@ -81,3 +81,12 @@ btns.forEach((btn, i) => {
 // LOGOS SLIDE
 var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
+
+// =============Team Section================
+const team = document.querySelector(".team-wrapper");
+
+Array.from(team.children).forEach((item) => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    team.appendChild(duplicateNode);
+});
