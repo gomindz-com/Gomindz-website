@@ -36,8 +36,11 @@ window.addEventListener('scroll', scrollHeader)
 // ================================================Owl Carousel=====================================================
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:20,
+    margin:40,
     responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout: 1500,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1,
@@ -78,3 +81,12 @@ btns.forEach((btn, i) => {
 // LOGOS SLIDE
 var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
+
+// =============Team Section================
+const team = document.querySelector(".team-wrapper");
+
+Array.from(team.children).forEach((item) => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    team.appendChild(duplicateNode);
+});
