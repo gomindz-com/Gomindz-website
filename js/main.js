@@ -83,10 +83,23 @@ var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
 // =============Team Section================
-const team = document.querySelector(".team-wrapper");
-
-Array.from(team.children).forEach((item) => {
-    const duplicateNode = item.cloneNode(true);
-    duplicateNode.setAttribute("aria-hidden", true);
-    team.appendChild(duplicateNode);
-});
+$('.team-carousel').owlCarousel({
+    loop:true,
+    autoplay: true,
+    margin:8,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1280:{
+            items:4
+        }
+    }
+})
