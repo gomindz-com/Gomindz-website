@@ -890,69 +890,90 @@ img{
     }
  /* ===========XX========Executive-summary Section===========XX========= */
 
+
+ /* ================================Team Section======================== */
  #team{
-    margin-bottom: 3%;
+    padding: 10% 0;
+    overflow: hidden;
+ }
+ #team .team-text{
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-left: 6rem;
+    font-family: var(--main-header);
+    color: #9bbadd;
 }
-.team-content{
-    margin-top: 50px;
-} 
-.team-content .item{
-    border-radius: 15px;
-    padding: 20px 25px;
-    margin: 12px;
-    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.2);
-    transition: all .3s;
-    cursor: pointer;
-}
-.team-content .item:hover{
-    box-shadow: 0px 0px 15px var(--primary-color);
-}
-.instructor-img{
-    max-width: 100rem;
-    margin: 0 auto 20px;
-    min-height: 100px;
-    line-height: 80px;
-    vertical-align: middle;
-}
-.instructor-img img{
-    border-radius: 15px;
-}
-.instructor h6{
-    font-family: var(--paragraph);
-    font-size: 21px;
-    font-weight: 550;
-    margin-bottom: 6px;
-}
-.instructor a{
+#team .team-text span{
     display: inline-block;
-    width: 32px;
+    background: #03a4ed;
+    width: 70px;
+    height: 5px;
+}
+
+ .team-wrapper{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: scroll 10s linear infinite;
     cursor: pointer;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    font-size: 16px;
-    color: #ffff;
-    text-align: center;
-    margin-right: 3px;
-}
+ }
+    .team-wrapper .staff-card{
+        max-width: 300px;
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .team-wrapper .staff-card .staff-info{
+        position: absolute;
+        padding: 1rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(100%);
+        background-image: linear-gradient(to bottom, 
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5));
+        transition: 2s;
+        z-index: 1;
+        color: #fff;
+    }
+    .team-wrapper .staff-card:hover .staff-info{
+        transform: translateY(0);
+    }
+
+    .team-wrapper .staff-card:hover .staff-info h4{
+        font-family: var(--sub-headings);
+        font-weight: 700;
+        font-size: 25px;
+        padding: 0;
+        margin: 2px;
+    }
+    .team-wrapper .staff-card:hover .staff-info p{
+        font-family: var(--p-under-sub-headings);
+    }
+    .team-wrapper .staff-card:hover .staff-info .staff-socials{
+        padding-top: 8px;
+        font-size: 20px;
+    }
+ @keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+    }
+ }
+ .team-wrapper:hover{
+    animation-play-state: paused;
+ }
+ /* ================XX==============Team Section=============XX========= */
 
 
-.owl-nav{
-    text-align: center;
-    margin-top: 2%;
-}
-.owl-prev,
-.owl-next{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev{
-    font-size: 3rem !important;
-    line-height: 0;
-    margin-left: 18px;
-    color: var(--primary-color);
-}
 
     
              /* ========XX=======ABOUT PAGE CSS============XX======== */
@@ -1671,6 +1692,8 @@ img{
 
 
 /* ==================================Footer Section=========================== */
+
+
 
   .footer-distributed{
     background-color: #f6f6f6;
